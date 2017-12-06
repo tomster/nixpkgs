@@ -297,6 +297,15 @@
     };
     version = "1.9.18";
   };
+  ffi-win32-extensions = {
+    dependencies = ["ffi"];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1ywkkbr3bpi2ais2jr8yrsqwwrm48jg262anmdkcb9if95vajx7l";
+      type = "gem";
+    };
+    version = "1.0.3";
+  };
   ffi-yajl = {
     dependencies = ["libyajl2"];
     source = {
@@ -455,6 +464,15 @@
     };
     version = "0.20.0";
   };
+  kitchen-nodes = {
+    dependencies = ["net-ping" "test-kitchen" "win32-security"];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "17qla1x4lpck2ndsw8gg387azd1df3vz2qpszjhv31w7h8vzyi5d";
+      type = "gem";
+    };
+    version = "0.9.1";
+  };
   kitchen-vagrant = {
     dependencies = ["test-kitchen"];
     source = {
@@ -610,6 +628,14 @@
       type = "gem";
     };
     version = "2.0.0";
+  };
+  net-ping = {
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0a2j9bf000k1jza5h9wlrsscf7vw1d900mj195zx4bakhva3m1zv";
+      type = "gem";
+    };
+    version = "2.0.2";
   };
   net-scp = {
     dependencies = ["net-ssh"];
@@ -1093,6 +1119,15 @@
       type = "gem";
     };
     version = "0.6.0";
+  };
+  win32-security = {
+    dependencies = ["ffi" "ffi-win32-extensions"];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1i9p9c7371fy2b5p2kmavfcryacwlk5mr4d7sjzvjzazwcf3crqj";
+      type = "gem";
+    };
+    version = "0.5.0";
   };
   winrm = {
     dependencies = ["builder" "erubis" "gssapi" "gyoku" "httpclient" "logging" "nori" "rubyntlm"];
